@@ -1,6 +1,6 @@
 'use strict';
 
-export const parse = (str = window.location.search) => {
+exports.parse = (str = window.location.search) => {
     // Create an object with no prototype
     const set = Object.create(null);
 
@@ -12,16 +12,16 @@ export const parse = (str = window.location.search) => {
         return set;
     }
 
-    str = decodeURIComponent(str.substring(1));
+    str = decodeURIComponent(str);
     str.split('&').forEach((param) => {
         param = param.split('=');
-        key = param[0];
+        let key = param[0];
         set[key] = param[1] || null;
     })
     return set;
 };
 
-export const stringify = (obj = {}) => {
+exports.stringify = (obj = {}) => {
     return Object.keys(obj).sort().map((key) => {
         const val = obj[key];
         if (val === undefined || val === null) {
@@ -31,9 +31,9 @@ export const stringify = (obj = {}) => {
     }).join('&');
 };
 
-export const getParam = (key) => {
+exports.getParam = (key, str = window.location.search) => {
     const reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
-    let search = decodeURIComponent(window.location.search);
+    let search = decodeURIComponent(str);
     let result = search.substr(1).match(reg);
     if (result !== null) return unescape(result[2]);
     return null;
