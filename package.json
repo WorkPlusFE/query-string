@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/WorkPlusFE/workplus-query-string/issues"
   },
-  "homepage": "https://github.com/WorkPlusFE/workplus-query-string#readme"
+  "homepage": "https://github.com/WorkPlusFE/workplus-query-string#readme",
+  "devDependencies": {
+    "ava": "^0.17.0"
+  }
 }
