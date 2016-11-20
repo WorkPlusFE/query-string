@@ -1,0 +1,24 @@
+{
+  "name": "workplus-query-string",
+  "version": "1.0.0",
+  "description": "Parse and stringify URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WorkPlusFE/workplus-query-string.git"
+  },
+  "keywords": [
+    "workplus",
+    "query-string",
+    "url-parse"
+  ],
+  "author": "Hejx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WorkPlusFE/workplus-query-string/issues"
+  },
+  "homepage": "https://github.com/WorkPlusFE/workplus-query-string#readme"
+}
