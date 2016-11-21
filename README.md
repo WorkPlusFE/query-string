@@ -16,7 +16,6 @@ import { parse, stringify, getParam } from 'workplus-query-string';
 // If location.search = '?a=1&b=2&c=3'
 
 let params = parse();
-
 // params => {a: "1", b: "2", c: "3"}
 
 let obj = {
@@ -24,12 +23,10 @@ let obj = {
     y: 2,
 },
 
-let str = stringify(obj)
-
+let str = stringify(obj);
 // str => "x=1&y=2"
 
 let val = getParam('a');
-
 // val => '1'
 
 ```
