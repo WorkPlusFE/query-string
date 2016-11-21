@@ -1,6 +1,6 @@
 {
   "name": "workplus-query-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse and stringify URL",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,8 @@
   },
   "keywords": [
     "workplus",
-    "query-string",
-    "url-parse"
+    "query string",
+    "url parse"
   ],
   "author": "Hejx",
   "license": "MIT",
