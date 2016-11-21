@@ -23,7 +23,7 @@ exports.parse = (str = window.location.search) => {
 
 exports.stringify = (obj = {}) => {
     return Object.keys(obj).sort().map((key) => {
-        const val = obj[key];
+        let val = obj[key];
         if (val === undefined || val === null) {
             val = '';
         }
