@@ -4,6 +4,7 @@
   "description": "Parse and stringify URL",
   "main": "index.js",
   "scripts": {
+    "prepublish": "npm test",
     "test": "ava"
   },
   "repository": {
