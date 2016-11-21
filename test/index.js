@@ -13,7 +13,7 @@ test('Parse location search', t => {
 });
 
 test('Stringify obj', t => {
-    const obj1 = { a: "1" , b: "2", c: "3" };
+    const obj1 = { a: 1 , b: 2, c: 3 };
     t.is(search, `?${stringify(obj1)}`);
     const obj2 = { a: "1" , b: "", c: null, d: undefined };
     t.is('a=1&b=&c=&d=', `${stringify(obj2)}`);
@@ -23,7 +23,7 @@ test('Stringify obj', t => {
 
 test('Get params from location search', t => {
     const param_a = getParam('a', search);
-    t.is(param_a, "1");
+    t.is(param_a, '1');
     t.pass();
 })
 

@@ -24,7 +24,7 @@ let obj = {
 },
 
 let str = stringify(obj);
-// str => "x=1&y=2"
+// str => 'x=1&y=2'
 
 let val = getParam('a');
 // val => '1'
