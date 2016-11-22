@@ -1,6 +1,8 @@
 'use strict';
 
-export const parse = (str = window.location.search) => {
+Object.defineProperty(exports, '__esModule', { value: true });
+
+const parse = (str = window.location.search) => {
     // Create an object with no prototype
     const set = Object.create(null);
 
@@ -21,7 +23,7 @@ export const parse = (str = window.location.search) => {
     return set;
 };
 
-export const stringify = (obj = {}) => {
+const stringify = (obj = {}) => {
     return Object.keys(obj).sort().map((key) => {
         let val = obj[key];
         if (val === undefined || val === null) {
@@ -31,10 +33,14 @@ export const stringify = (obj = {}) => {
     }).join('&');
 };
 
-export const getParam = (key, str = window.location.search) => {
+const getParam = (key, str = window.location.search) => {
     const reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
     let search = decodeURIComponent(str);
     let result = search.substr(1).match(reg);
     if (result !== null) return unescape(result[2]);
     return null;
 };
+
+exports.parse = parse;
+exports.stringify = stringify;
+exports.getParam = getParam;

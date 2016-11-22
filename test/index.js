@@ -1,5 +1,5 @@
 import test from 'ava';
-import { parse, stringify, getParam } from '../';
+import { parse, stringify, getParam } from './workplus-query-string';
 
 let search = '';
 test.beforeEach(t => {
