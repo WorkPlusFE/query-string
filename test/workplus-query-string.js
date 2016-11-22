@@ -19,7 +19,7 @@ const parse = (str = window.location.search) => {
         param = param.split('=');
         let key = param[0];
         set[key] = param[1] || null;
-    })
+    });
     return set;
 };
 
