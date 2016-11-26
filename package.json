@@ -1,8 +1,8 @@
 {
   "name": "workplus-query-string",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Parse and stringify URL",
-  "main": "lin/workplus-query-string.js",
+  "main": "lib/workplus-query-string.js",
   "scripts": {
     "prepublish": "npm test",
     "test": "ava test/index.js",
