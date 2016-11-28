@@ -23,7 +23,7 @@ export default {
     {
       dest: pkg['main'],
       format: 'umd',
-      moduleName: 'workplusEscape',
+      moduleName: 'workplusQueryString',
       sourceMap: true
     },
     {
