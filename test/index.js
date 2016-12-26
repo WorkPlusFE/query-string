@@ -12,6 +12,20 @@ test('Parse location search', t => {
     t.pass();
 });
 
+test('Parse some special str1', t => {
+    const specialStr1 = 'a==&b=&';
+    const obj = parse(specialStr1);
+    t.deepEqual(obj, { a: "=" , b: ""});
+    t.pass();
+});
+
+test('Parse some special str2', t => {
+    const specialStr2 = 'a=%22&b=%3D';
+    const obj = parse(specialStr2);
+    t.deepEqual(obj, { a: '"' , b: "="});
+    t.pass();
+});
+
 test('Stringify obj', t => {
     const obj1 = { a: 1 , b: 2, c: 3 };
     t.is(search, `?${stringify(obj1)}`);

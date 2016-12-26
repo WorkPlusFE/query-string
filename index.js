@@ -13,11 +13,18 @@ export const parse = (str) => {
         return set;
     }
 
-    str = decodeURIComponent(str);
     str.split('&').forEach((param) => {
         param = param.split('=');
-        let key = param[0];
-        set[key] = param[1] || null;
+
+        let key = param.shift();
+        let val = param.length > 0 ? param.join('=') : undefined;
+
+        key = decodeURIComponent(key);
+        val = val === undefined ? null :  decodeURIComponent(val);
+
+        if (key) {
+            set[key] = val;
+        }
     })
     return set;
 };
