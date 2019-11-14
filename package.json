@@ -1,9 +1,12 @@
 {
-  "name": "workplus-query-string",
+  "name": "@w6s/query-string",
   "version": "1.2.0",
   "description": "Parse and stringify URL",
   "main": "lib/workplus-query-string.js",
   "jsnext:main": "lib/workplus-query-string.esm.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "ava test/index.js",
     "pretest": "npm run build",
@@ -18,7 +21,8 @@
   "keywords": [
     "workplus",
     "query string",
-    "url parse"
+    "url parse",
+    "w6s"
   ],
   "author": "Hejx",
   "license": "MIT",
