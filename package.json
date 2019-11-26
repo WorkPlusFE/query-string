@@ -1,9 +1,9 @@
 {
   "name": "@w6s/query-string",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Parse and stringify URL",
   "main": "lib/workplus-query-string.js",
-  "jsnext:main": "lib/workplus-query-string.esm.js",
+  "module": "lib/workplus-query-string.esm.js",
   "publishConfig": {
     "access": "public"
   },
